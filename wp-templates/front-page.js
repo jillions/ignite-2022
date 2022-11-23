@@ -52,7 +52,7 @@ export default function Component() {
         {/* <EntryHeader image={mainBanner} /> */}
         <div className={styles.hero}>
           <section className={styles.intro}>
-            <Heading className={styles.home_heading} level="h1">
+            <Heading className={styles.heading} level="h1">
               Welcome to
             </Heading>
             <img src="/static/ignite-logo.webp" alt="Ignite logo" />

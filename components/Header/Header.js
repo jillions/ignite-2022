@@ -32,7 +32,7 @@ export default function Header({ className, menuItems }) {
             <Link href="/">
               <a title="Home">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   width={400}
                   height={80}
                   alt="Blueprint media logo"

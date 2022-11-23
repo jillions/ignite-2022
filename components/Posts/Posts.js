@@ -32,7 +32,7 @@ function Posts({ posts, intro, id }) {
 
           if (!image && appConfig.archiveDisplayFeaturedImage) {
             image = {
-              sourceUrl: '/static/banner.jpeg',
+              sourceUrl: '/static/ignite-logo.webp',
               altText: 'Downtown Austin, Texas skyline',
             };
           }

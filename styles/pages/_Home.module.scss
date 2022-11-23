@@ -13,6 +13,61 @@
   line-height: 1.2;
 }
 
+.hero {
+  background-image: url("/static/ignite.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+
+  section {
+    margin: 0 auto;
+    max-width: $container-max-width;
+    padding: 0 2rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &.small {
+      max-width: $content-max-width;
+    }
+    
+    @media (min-width: $breakpoint-medium) {
+      .hero {
+        width: percentage(10/12);
+      }
+    }
+
+    .intro {
+      // text-align: center;
+
+      .home_heading {
+        font-size: 4.8rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        color: var(--color-orange);
+      }
+
+      .description {
+        max-width: 100%;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        margin: 0 auto 2rem;
+        padding: 0 1.5rem;
+
+        @media (min-width: $breakpoint-small) {
+          max-width: 60%;
+        }   
+      }
+
+      img {
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
 .description {
   max-width: 100%;
   font-size: 1.8rem;
@@ -30,8 +85,12 @@
   }
 }
 
-.posts .heading {
-  margin-bottom: 4rem;
+.posts {
+  background-color: var(--color-white);
+
+  .heading {
+    margin-bottom: 4rem;
+  }
 }
 
 .testimonials {

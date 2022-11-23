@@ -1,6 +1,7 @@
 @import 'styles/Variables';
 
 .featured-image {
+  background-color: var(--color-primary);
   border: 2rem solid var(--color-white);
   background-color: var(--color-white);
   box-shadow: $box-shadow;

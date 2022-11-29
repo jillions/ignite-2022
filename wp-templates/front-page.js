@@ -34,7 +34,7 @@ export default function Component() {
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
   const mainBanner = {
-    sourceUrl: '/static/banner.jpeg',
+    sourceUrl: '/static/ignite-logo.webp',
     mediaDetails: { width: 1200, height: 600 },
     altText: 'Portfolio Banner',
   };
@@ -49,15 +49,15 @@ export default function Component() {
       />
 
       <Main className={styles.home}>
-        <EntryHeader image={mainBanner} />
-        <div className="container">
-          <section className="hero text-center">
+        {/* <EntryHeader image={mainBanner} /> */}
+        <div className={styles.hero}>
+          <section className={styles.intro}>
             <Heading className={styles.heading} level="h1">
-              Welcome to your Blueprint
+              Welcome to
             </Heading>
+            <img src="/static/ignite-logo.webp" alt="Ignite logo" />
             <p className={styles.description}>
-              Achieve unprecedented performance with modern frameworks and the
-              world&apos;s #1 open source CMS in one powerful headless platform.{' '}
+            Ignite your agency or brands growth with the leaders in WordPress performance and innovation. WP Engine Ignite is the event for digital agencies focused on growth strategies. Discover new technologies and trends shaping our digital world and glean insights from industry experts focused on your business success now and beyond.{' '}
             </p>
             <div className={styles.actions}>
               <Button styleType="secondary" href="/contact-us">
@@ -82,6 +82,8 @@ export default function Component() {
               </span>
             </CTA>
           </section>
+        </div>
+        <div className="container">
           <section className={styles.posts}>
             <Heading className={styles.heading} level="h2">
               Latest Posts

@@ -3,10 +3,11 @@ import appConfig from '../../app.config';
 const themes = {
   blue: {
     '--color-black': '#000',
-    '--color-primary': '#000066',
+    '--color-primary': '#002838',
     '--color-secondary': '#0969da',
     '--color-tertiary': '#CCCCCC',
     '--color-white': '#FFFFFF',
+    '--color-orange': '#FF6119;',
   },
   red: {
     '--color-black': '#000',
@@ -36,6 +37,7 @@ export default function ThemeStyles() {
         --color-secondary: ${themes[themeColor]['--color-secondary']};
         --color-tertiary: ${themes[themeColor]['--color-tertiary']};
         --color-white: ${themes[themeColor]['--color-white']};
+        --color-orange: ${themes[themeColor]['--color-orange']};
       }
     `}</style>
   );
